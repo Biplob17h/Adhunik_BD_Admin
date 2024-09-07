@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.customDiv1 {
+  width: 300px;
+  height: 120px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+.customText1 {
+    font-size: 21px;
+    font-weight: 700;
+  margin-top: 0px;
+  transition: 0.5s ease;
+}
+
+.customDiv1:hover .customText1 {
+  margin-top: -90px;
+  transition: 0.5s ease;
+}

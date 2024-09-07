@@ -7,6 +7,7 @@ import Category from "../Category/Category";
 import VendorApplication from "../VendorApplication/VendorApplication";
 import VendorApplicationSingle from "../VendorApplication/VendorApplicationSingle";
 import { MainApiLink } from "../../App";
+import Categories from "../Category/Categories/Categories";
 
 const Routes = createBrowserRouter([
   {
@@ -40,6 +41,16 @@ const Routes = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
+  {
+    path : "/category",
+    element : <Category />,
+    children : [
+      {
+        path : "/category/categories",
+        element : <Categories />
+      }
+    ]
+  }
 ]);
 
 export default Routes;
