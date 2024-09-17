@@ -1,0 +1,83 @@
+[
+  {
+    "category": "AC Servicing",
+    "slug": "ac",
+    "photo" : ""
+  },
+  {
+    "category": "Refrigerator",
+    "slug": "refrigerator",
+    "photo" : ""
+  },
+  {
+    "category": "Microwave",
+    "slug": "microwave",
+    "photo" : ""
+  },
+  {
+    "category": "Washing Machine",
+    "slug": "washingMachine",
+    "photo" : ""
+  },
+  {
+    "category": "IPS",
+    "slug": "ips",
+    "photo" : ""
+  },
+  {
+    "category": "Treadmill",
+    "slug": "treadmill",
+    "photo" : ""
+  },
+  {
+    "category": "Kitchen Hood",
+    "slug": "kitchenHood",
+    "photo" : ""
+  },
+  {
+    "category": "Electric Geyser",
+    "slug": "electricGeyser",
+    "photo" : ""
+  },
+  {
+    "category": "Gas Stove/Burner",
+    "slug": "gasStove",
+    "photo" : ""
+  },
+  {
+    "category": "Electric",
+    "slug": "electric",
+    "photo" : ""
+  },
+  {
+    "category": "Desktop",
+    "slug": "desktop",
+    "photo" : ""
+  },
+  {
+    "category": "Laptop",
+    "slug": "laptop",
+    "photo" : ""
+  },
+  {
+    "category": "CCTV",
+    "slug": "cctv",
+    "photo" : ""
+  },
+  {
+    "category": "Solar Panel",
+    "slug": "solarPanel",
+    "photo" : ""
+  },
+  {
+    "category": "Cleaning",
+    "slug": "cleaning",
+    "photo" : ""
+    
+  },
+  {
+    "category": "Pest Control",
+    "slug": "pestControl",
+    "photo" : ""
+  }
+]

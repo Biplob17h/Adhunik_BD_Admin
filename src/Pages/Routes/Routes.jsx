@@ -3,11 +3,11 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Order from "../Order/Order";
-import Category from "../Category/Category";
 import VendorApplication from "../VendorApplication/VendorApplication";
 import VendorApplicationSingle from "../VendorApplication/VendorApplicationSingle";
 import { MainApiLink } from "../../App";
-import Categories from "../Category/Categories/Categories";
+import Category from "../Category/Categories/Categories";
+import SubCategory from "../SubCategory/SubCategory/SubCategory";
 
 const Routes = createBrowserRouter([
   {
@@ -47,7 +47,11 @@ const Routes = createBrowserRouter([
     children : [
       {
         path : "/category/categories",
-        element : <Categories />
+        element : <Category></Category>
+      },
+      {
+        path : "/category/subCategory/:id",
+        element : <SubCategory></SubCategory>
       }
     ]
   }
