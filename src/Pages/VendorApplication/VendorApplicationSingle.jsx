@@ -12,13 +12,13 @@ const VendorApplicationSingle = () => {
     useEffect(() => {
       fetch(`http://localhost:5000/api/v1/application/single/${id}`)
         .then((res) => res.json())
-        .then((data) => setApplication(data.data));
+        .then((data) => setApplication(data?.data));
     }, []);
   }
 
   const confirmApplication = () => {
     const newStatus = "active";
-    const phone = application.vendorPhone;
+    const phone = application?.vendorPhone;
 
     const update = {
       newStatus,
@@ -42,7 +42,7 @@ const VendorApplicationSingle = () => {
   };
   const rejectApplication = () => {
     const newStatus = "rejected";
-    const phone = application.vendorPhone;
+    const phone = application?.vendorPhone;
 
     const update = {
       newStatus,
@@ -90,31 +90,31 @@ const VendorApplicationSingle = () => {
           <div className="w-24 rounded-full">
             <img
               src={
-                application.vendor?.vendorPhoto
-                  ? application.vendor?.vendorPhoto
+                application?.vendor?.vendorPhoto
+                  ? application?.vendor?.vendorPhoto
                   : "https://w7.pngwing.com/pngs/205/731/png-transparent-default-avatar.png"
               }
             />
           </div>
         </div>
         <div>
-          <h1>Vendor Name : {application.vendor?.vendorName}</h1>
-          <h1>Shop Name : {application.vendor?.shopName}</h1>
-          <h1>Shop Address : {application.vendor?.shopAddress}</h1>
-          <h1>email : {application.vendor?.email}</h1>
-          <h1>phone : {application.vendor?.phone}</h1>
-          <h1>NID : {application.vendor?.nid}</h1>
+          <h1>Vendor Name : {application?.vendor?.vendorName}</h1>
+          <h1>Shop Name : {application?.vendor?.shopName}</h1>
+          <h1>Shop Address : {application?.vendor?.shopAddress}</h1>
+          <h1>email : {application?.vendor?.email}</h1>
+          <h1>phone : {application?.vendor?.phone}</h1>
+          <h1>NID : {application?.vendor?.nid}</h1>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center flex-col">
           <div className="flex mt-5">
-            {application.vendor?.shopPhoto <= 0 ? (
+            {application?.vendor?.shopPhoto <= 0 ? (
               <div className="w-[130px] h-[130px] border-2 flex justify-center items-center cursor-pointer">
                 <FaPlus className="" size={30} />
               </div>
             ) : (
-              application.vendor?.shopPhoto.map((photo) => (
+              application?.vendor?.shopPhoto.map((photo) => (
                 <img
                   className="w-[130px] h-[130px] border-2 "
                   src={photo?.shopPhoto}

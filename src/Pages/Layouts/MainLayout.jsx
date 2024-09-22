@@ -54,6 +54,9 @@ const MainLayout = () => {
                       <Link to={"/category"}>Category</Link>
                     </li>
                     <li>
+                      <Link to={"/vendors"}>Vendors </Link>
+                    </li>
+                    <li>
                       <Link to={"/application"}>Vendor Application </Link>
                     </li>
                     <li>

@@ -6,13 +6,11 @@ const VendorApplication = () => {
   const [vendors, setVendors] = useState([]);
   const [applications, setApplications] = useState([]);
 
-  console.log(applications);
 
   useEffect(() => {
     fetch(`${MainApiLink}/api/v1/application/getAllApplication`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setApplications(data.applications);
       });
   }, []);

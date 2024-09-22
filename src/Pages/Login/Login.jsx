@@ -25,7 +25,6 @@ const Login = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.status === "success") {
           toast.success("Admin login successful");
           localStorage.setItem("adhunikAdmin", JSON.stringify(data?.adminData));

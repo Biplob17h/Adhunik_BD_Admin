@@ -8,6 +8,8 @@ import VendorApplicationSingle from "../VendorApplication/VendorApplicationSingl
 import { MainApiLink } from "../../App";
 import Category from "../Category/Categories/Categories";
 import SubCategory from "../SubCategory/SubCategory/SubCategory";
+import Services from "../Services/Services";
+import Vendors from "../Vendors/Vendors";
 
 const Routes = createBrowserRouter([
   {
@@ -23,6 +25,10 @@ const Routes = createBrowserRouter([
         element: <Order />,
       },
       {
+        path: "/vendors",
+        element: <Vendors />,
+      },
+      {
         path: "/category",
         element: <Category />,
       },
@@ -33,7 +39,18 @@ const Routes = createBrowserRouter([
       {
         path: "/application/single/:id",
         element: <VendorApplicationSingle />,
-        
+      },
+      {
+        path: "/category/categories",
+        element: <Category></Category>,
+      },
+      {
+        path: "/category/subCategory/:id",
+        element: <SubCategory></SubCategory>,
+      },
+      {
+        path: "/category/subCategory/services/:categoryId/:subcategoryId",
+        element: <Services></Services>,
       },
     ],
   },
@@ -41,20 +58,6 @@ const Routes = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
-  {
-    path : "/category",
-    element : <Category />,
-    children : [
-      {
-        path : "/category/categories",
-        element : <Category></Category>
-      },
-      {
-        path : "/category/subCategory/:id",
-        element : <SubCategory></SubCategory>
-      }
-    ]
-  }
 ]);
 
 export default Routes;
