@@ -10,6 +10,7 @@ import Category from "../Category/Categories/Categories";
 import SubCategory from "../SubCategory/SubCategory/SubCategory";
 import Services from "../Services/Services";
 import Vendors from "../Vendors/Vendors";
+import OrderPageSingle from "../Order/OrderPageSingle";
 
 const Routes = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ const Routes = createBrowserRouter([
       {
         path: "/order",
         element: <Order />,
+      },
+      {
+        path: "/order/:id",
+        element: <OrderPageSingle />,
+        
       },
       {
         path: "/vendors",
